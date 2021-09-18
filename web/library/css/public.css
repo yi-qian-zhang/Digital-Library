@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family: Inter, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    color: white;
+    background-color: #03A9F4;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.btn {
+    font-size: 24px;
+}
+
+
+.back-to-top {
+    z-index: 10;
+    position: fixed;
+    bottom: -100%;
+    right: 5%;
+    color: white;
+    background-color: #2196F3;
+    padding: 18px;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.back-to-top:hover {
+    background-color: #42A5F5;
+}
+
+
+.dl4csr-header {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #E0E0E0;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.dl4csr-header ul {
+    padding: 0 15%;
+    list-style-type: none;
+}
+
+.dl4csr-header ul li {
+    float: right;
+}
+
+.dl4csr-header ul li a {
+    display: block;
+    padding: 16px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dl4csr-header ul li a:hover {
+    color: #454545;
+}
+
+
+.dl4csr-search {
+    color: black;
+    background-color: white;
+    text-align: right;
+    z-index: 10;
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dl4csr-search .title {
+    float: left;
+    font-size: 20px;
+    padding: 16px;
+}
+
+.dl4csr-search form {
+    padding: 0 15%;
+}
+
+.dl4csr-search form input {
+    vertical-align: super;
+    width: 50%;
+    font-size: 18px;
+    padding: 3px 0;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dl4csr-search form input:focus {
+    border-bottom-color: #212121;
+}
+
+.dl4csr-search form button {
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    padding: 16px;
+    outline: transparent;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dl4csr-search form button:hover {
+    color: #555555;
+}
+
+
+.dl4csr-main {
+    padding: 84px 15% 0;
+    margin: 0 12px;
+    text-align: center;
+}
+
+.dl4csr-main--paper.title {
+    font-size: 32px;
+    padding-bottom: 8px;
+}
+
+.dl4csr-main--paper.item {
+    text-align: left;
+    line-height: 1.5;
+    padding: 16px;
+    margin: 16px 0;
+    border: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24), 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+.dl4csr-main--paper.item h2 {
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 6px;
+}
+
+.dl4csr-main--paper.details {
+    display: grid;
+    grid-template-columns: 120px auto;
+}
+
+.dl4csr-main--paper.key {
+    text-align: left;
+    padding: 6px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dl4csr-main--paper.value {
+    text-align: justify;
+    padding: 6px 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.dl4csr-main--paper.download {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    background-color: #2196F3;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dl4csr-main--paper.download:hover {
+    background-color: #42A5F5;
+}
+
+
+.dl4csr-nav {
+    padding: 0 15% 12px;
+    margin: 0 12px;
+    text-align: center;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.dl4csr-nav--pages {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+.dl4csr-nav--pages a {
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #E0E0E0;
+    padding: 3px;
+    width: 30px;
+    height: 32px;
+    line-height: 32px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dl4csr-nav--pages a:hover {
+    color: white;
+    background-color: #42A5F5;
+    border-color: #42A5F5;
+}
+
+.dl4csr-nav--num {
+    font-size: 20px;
+}
+
+.dl4csr-nav--num.active {
+    color: white;
+    background-color: #2196F3;
+    border: 1px solid #2196F3;
+}
+
+
+.dl4csr-footer {
+    background-color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #E0E0E0;
+    line-height: 1.4;
+}
+
+.dl4csr-footer.bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.dl4csr-footer--title {
+    font-family: times, serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.dl4csr-footer--content {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+.dl4csr-snackbar {
+    display: grid;
+    grid-template-columns: 60% 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: #212121;
+    bottom: -100%;
+    padding: 18px 15%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24), 0 1px 6px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.dl4csr-snackbar #snackbar_info {
+    color: white;
+    font-size: 18px;
+    text-align: left;
+}
+
+.dl4csr-snackbar #snackbar_close {
+    color: #2196F3;
+    font-size: 18px;
+    font-weight: bold;
+    width: available;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dl4csr-snackbar #snackbar_close:hover {
+    color: #42A5F5;
+}

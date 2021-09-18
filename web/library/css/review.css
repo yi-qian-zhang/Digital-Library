@@ -1,0 +1,56 @@
+.dl4csr-main--comment.input {
+    display: flex;
+    text-align: left;
+}
+
+.dl4csr-main--comment.button {
+    display: block;
+    text-align: right;
+}
+
+.dl4csr-main--comment.input textarea {
+    padding: 6px 3px;
+    font-size: 16px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #E0E0E0;
+    outline: none;
+    transition: all 0.2s ease;
+    border-radius: 3px;
+}
+
+.dl4csr-main--comment.input textarea:hover {
+    border-color: #CDCDCD;
+}
+
+.dl4csr-main--comment.input textarea:focus {
+    border-color: #42A5F5;
+}
+
+.dl4csr-main--comment.btn {
+    margin-left: 6px;
+    margin-top: 12px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    background-color: #2196F3;
+    font-size: 16px;
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dl4csr-main--comment.btn:hover {
+    background-color: #42A5F5;
+}
+
+.dl4csr-main--comment.btn.neg {
+    background-color: #E51C23;
+}
+
+.dl4csr-main--comment.btn.neg:hover {
+    background-color: #F36C60;
+}

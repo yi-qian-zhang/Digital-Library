@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family: Inter, sans-serif;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    background-color: #F4F4F4;
+}
+
+.dl4csr-main {
+    position: fixed;
+    left: 25%;
+    right: 25%;
+    top: 20%;
+}
+
+.dl4csr-main--content {
+    background-color: white;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 43% 57%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24), 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+.dl4csr-main--content--left {
+    padding: 36px 48px 36px 36px;
+    border-right: 1px solid #E0E0E0;
+}
+
+.dl4csr-main--content--left h1 {
+    font-size: 24px;
+}
+
+.dl4csr-main--content--right {
+    padding: 36px 36px 36px 48px;
+}
+
+.dl4csr-main--content--right h1 {
+    font-size: 24px;
+}
+
+.dl4csr-main--content--right p {
+    padding-top: 28px;
+}
+
+.dl4csr-main--content--right input {
+    width: 100%;
+    padding: 6px 3px;
+    font-size: 16px;
+    border: 1px solid #E0E0E0;
+    outline: none;
+    transition: all 0.2s ease;
+    border-radius: 3px;
+}
+
+.dl4csr-main--content--right input:hover {
+    border-color: #CDCDCD;
+}
+
+.dl4csr-main--content--right input:focus {
+    border-color: #42A5F5;
+}
+
+.dl4csr-main--content--right button {
+    cursor: pointer;
+    color: white;
+    background-color: #2196F3;
+    width: 100%;
+    font-size: 16px;
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24), 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+.dl4csr-main--content--right button:hover {
+    background-color: #42A5F5;
+}
+
+.dl4csr-main--content--right a {
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+    text-decoration: underline;
+}
+
+.dl4csr-main--selector {
+    padding-top: 24px;
+    display: grid;
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+}
+
+.dl4csr-main--selector button {
+    color: black;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.dl4csr-main--selector button:hover {
+    background-color: #EEEEEE;
+}
+
+.dl4csr-main--copyright {
+    padding: 8px;
+}
+
+.dl4csr-main--copyright p {
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+}
+
+.material-icons.vis {
+    position: absolute;
+    cursor: pointer;
+    right: 50px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.dl4csr-snackbar {
+    display: grid;
+    grid-template-columns: 40% 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: #212121;
+    bottom: -100%;
+    padding: 18px 25%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24), 0 1px 6px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease-in-out;
+}
+
+.dl4csr-snackbar #snackbar_info {
+    color: white;
+    font-size: 18px;
+    text-align: left;
+}
+
+.dl4csr-snackbar #snackbar_close {
+    color: #2196F3;
+    font-size: 18px;
+    font-weight: bold;
+    width: available;
+    text-decoration: underline;
+    cursor: pointer;
+}
